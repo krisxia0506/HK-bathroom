@@ -84,27 +84,27 @@ const renderChart = (chartId, apiUrl, titleText) => {
 
 // 在页面加载完成后渲染中区男浴室图表
 document.addEventListener('DOMContentLoaded', () => {
-  const maleBathroomApiUrl = 'http://127.0.0.1:5000/get-bathroom-data-zq-female';
+  const maleBathroomApiUrl = 'http://127.0.0.1:64535/get-bathroom-data-zq-female';
   const maleBathroomTitle = '中区男浴室在洗人数';
   renderChart('zqMaleBathroomChart', maleBathroomApiUrl, maleBathroomTitle);
 });
 
 // 在页面加载完成后渲染中区女浴室图表
 document.addEventListener('DOMContentLoaded', () => {
-  const femaleBathroomApiUrl = 'http://127.0.0.1:5000/get-bathroom-data-zq-male';
+  const femaleBathroomApiUrl = 'http://127.0.0.1:64535/get-bathroom-data-zq-male';
   const femaleBathroomTitle = '中区女浴室在洗人数';
   renderChart('zqFemaleBathroomChart', femaleBathroomApiUrl, femaleBathroomTitle);
 });
 
 // 在页面加载完成后渲染北区男浴室图表
 document.addEventListener('DOMContentLoaded', () => {
-  const bqMaleBathroomApiUrl = 'http://127.0.0.1:5000/get-bathroom-data-bq-female';
+  const bqMaleBathroomApiUrl = 'http://127.0.0.1:64535/get-bathroom-data-bq-female';
   const bqMaleBathroomTitle = '北区男浴室在洗人数';
   renderChart('bqMaleBathroomChart', bqMaleBathroomApiUrl, bqMaleBathroomTitle);
 });
 // 在页面加载完成后渲染北区女浴室图表
 document.addEventListener('DOMContentLoaded', () => {
-  const bqMaleBathroomApiUrl = 'http://127.0.0.1:5000/get-bathroom-data-bq-male';
+  const bqMaleBathroomApiUrl = 'http://127.0.0.1:64535/get-bathroom-data-bq-male';
   const bqMaleBathroomTitle = '北区女浴室在洗人数';
   renderChart('bqFemaleBathroomChart', bqMaleBathroomApiUrl, bqMaleBathroomTitle);
 });
