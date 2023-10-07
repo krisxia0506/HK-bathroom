@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图书馆在馆人数</title>
+    <!-- 引入ECharts库 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <style>
+        /* styles.css */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            /* overflow: hidden; */
+        }
+
+        .chart {
+            width: 100%;
+            height: 100vh;
+            /* 每个图表占据页面高度的一半 */
+        }
+
+        body {
+            min-height: 100vh;
+            /* 设置body的最小高度为视口高度 */
+        }
+
+        .chart-container {
+            height: 50vh;
+            /* 设置每个图表容器的高度为50%的视口高度 */
+            /* 其他样式 ... */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 用于显示男浴室ECharts图表的DOM元素 -->
+    <div id="libChart" class="chart"></div>
+
+    <!-- 在这里引入你的JavaScript脚本 -->
+    <script src="lib_echarts.js"></script>
+</body>
+
+</html>

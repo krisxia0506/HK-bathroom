@@ -74,6 +74,17 @@ def get_bathroom_data_bq_male():
     else:
         return jsonify({'error': error}), 500
 
+# 定义API路由
+@app.route('/get_lib_data', methods=['GET'])
+def get_lib_data():
+    query = "SELECT * FROM lib_people_num WHERE  datetime >= NOW() - INTERVAL 24 HOUR"
+    data, error = get_data_from_database(query)
+    if data is not None:
+        return jsonify(data)
+    else:
+        return jsonify({'error': error}), 500
+
+
 # 启动Flask应用
 if __name__ == '__main__':
     app.run(debug=True, port=64535)
